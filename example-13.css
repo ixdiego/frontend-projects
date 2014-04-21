@@ -1,8 +1,79 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 13 */
 
 /* I'm blank! Write some CSS to style your layout! */
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container div {
+	margin: 10px;
+}
+
+.header {
+	margin: 0 0 0 0;
+	width: 100%
+}
+
+
+.sidebar {
+	float: left;
+	height: 500px;
+	width: 20%;
+}
+
+.main-content {
+	float: left;
+	
+	width: 70%;
+}
+
+.main-content:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.widget {
+
+	float:left ;
+
+}
+
+.sub-content {
+	float: left;
+	height: 300px;
+	width: 40%;
+}
+
+
+.container:after {
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+
+.footer {
+	clear: both;
+	position: absolute;
+	width: 100%;
+
+	bottom: 0;
+
+}
+
+.mainMenuButton {
+	float: right;
+}
