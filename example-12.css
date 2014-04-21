@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 12 */
@@ -9,20 +10,76 @@
 .todolist {}
 
 /* Individual Todo */
-.todo {}
+.todo {
+/*border: 2px solid yellow;*/
+padding-top: 20px;
+padding-bottom: 10px;
+
+}
+
+.todo:after{
+	content: " ";
+  border: 1px dotted #bbb;
+
+  display: block;
+  clear: both;
+  visibility: visible;
+}
+
 
 
 /* Priority icon dot */
-.icon {}
+.icon {
+	float: left;
+	/*border: 2px solid yellow;*/
+	padding-bottom: 10px;
+	padding-top: 0;
+	margin-top: -1px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
 
 /* Info of the todo, title and date */
-.todo-info {}
+.todo-info {
+	float: left;
+	/*clear: both;*/
+	/*border: 2px solid yellow;*/
+}
+
+/*.todo-info:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}*/
 
 /* Title */
-.todo-title {}
+.todo-title {
+	/*float: left;*/
+	/*border: 2px solid yellow;*/
+	font-size: 28px;
+
+}
 
 /* Date */
-.todo-date {}
+.todo-date {
+	/*clear: both;*/
+/*	border: 2px solid yellow;*/
+	margin-bottom: 20px;
+}
+
+.check {
+/*	border: 2px solid orange;*/
+	float: right;
+	padding: 15px;
+	margin-right: 20px;
+
+}
 
 /* Checkboxes! */
-input[type=checkbox] {}
+input[type=checkbox] {
+	float: left;
+	padding: 10px;
+
+}

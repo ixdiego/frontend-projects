@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 08 */
@@ -13,11 +14,25 @@
 .header {}
 
 
-.sidebar {}
+.sidebar {
+	float: left;
+	height: 300px;
+	width: 20%;
+}
 
-.main-content {}
+.main-content {
+	float: left;
+	height: 300px;
+	width: 40%;
+}
 
-.sub-content {}
+.sub-content {
+	float: left;
+	height: 300px;
+	width: 40%;
+}
 
 
-.footer {}
+.footer {
+	clear: both;
+}

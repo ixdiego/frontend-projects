@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 06 */
@@ -14,7 +15,21 @@
 .main-content {}
 /* hint! what do you need to add here? */
 
+
+.main-content:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.main-content div {
+	margin: 10px;
+}
 .widget {
+
+	float:left ;
 	/* how do you make the widgets float next to each other? */
 	/* what happens when you change float left to float right? why? */
 }
@@ -22,11 +37,17 @@
 
 .footer {
 	/* hint! */
+	clear: both;
 }
 
 
 /* Bonus: what happens if you make a couple of the widgets taller than the other? */
-/*.widget.tall {}*/
+
+/* QUESTION: I DID IT BUT I'M NOT REALLY SURE WHAT HAPPENED. IN THIS CASE I MADE NUMBER 3 600PX AND WIDGET 4, 5, 6, ALIGNED NEXT TO IT. THEN NUMBER 7 FLOATED ALL THE WAY LEFT AGAIN. WAS IT BECAUSE NUMBER 3 BEING 600PX WAS NO LONGER "IN THE WAY" OF NUMBER 7 AND THE OTHERS? */
+
+/*.tall {
+	height: 600px;
+}*/
 
 /* this CSS class targets widget #5. what can you do to it to make the rows of widgets get back in order? */
 .widget.fix {

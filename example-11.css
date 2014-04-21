@@ -1,11 +1,32 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 11 */
 
 .header {}
+
+.header:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.logo {
+	/* hint! */
+	width: 150px;
+	float: left;
+}
+
+.navigation {
+	/* hint! */
+	width: 720px;
+	float: right;
+}
 
 .main-content {}
 /* hint! */
@@ -13,6 +34,26 @@
 .post {}
 /* hint! */
 
-.image {}
+.post p {
+	width: 70%
+}
 
-.post_excerpt {}
+/*.post div{
+	margin: 10px;
+}*/
+
+.post:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.image {
+	float: left;
+}
+
+.post_excerpt {
+	float: right;
+}

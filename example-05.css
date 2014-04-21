@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 05 */
@@ -13,20 +14,75 @@
 .header {}
 /* hint! what do you have to add here? */
 
-.logo {}
+/* QUESTION: IS THE :AFTER TO CONTAIN THE LOGO AND THE NAV WHAT WAS REQUIRED TO BE ADDED HERE? */
 
-.navigation {}
+.header:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
 
-.sidebar {}
+.logo {
+	width: 150px;
+	float: left;
+}
 
-.main-content {}
+.navigation {
+	width: 720px;
+	float: right;
+}
+
+
+.main-content {
+	width: 100%;
+	height: 300px;
+}
 /* hint! you have to contain the floated children elements. */
+
+.main-content div {
+	margin: 10px;
+}
+
+.main-content:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.sidebar {
+	float: left;
+	width: 200px;
+	height: 260px;
+	
+}
 
 .sub-content {
 	/* hint! */
+
+	width: 600px;
+	float: right;
+	
+	
+
+	
+	
 }
 .sub-content-2 {
 	/* hint! */
+	
+	width: 600px;
+	float: right;
+	
+	
+
 }
 
-.footer {}
+
+
+.footer {
+	clear: both;
+}

@@ -1,6 +1,7 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 04 */
@@ -14,19 +15,39 @@
 .header {}
 /* hint! you have to contain the floated children elements. */
 
+.header:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
 .logo {
 	/* hint! */
+	width: 150px;
+	float: left;
 }
 
 .navigation {
 	/* hint! */
+	width: 720px;
+	float: right;
 }
 
 .sidebar {
+	float: left;
+	width: 250px;
+	height: 300px;
 }
 
 .main-content {
+	float: left;
+	width: 734px;
+	height: 300px;
 }
 
+
 .footer {
+	clear: both;
 }

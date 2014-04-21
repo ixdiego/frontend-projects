@@ -1,28 +1,74 @@
 /* ---------------------------------------------------------- */
 /* Float Examples for MakerSquare Front-End Class ----------- */
 /* created by Elyse Holladay @elyseholladay ----------------- */
+/* edited for Maker Square Homework purposes by Diego Pulido- */
 /* ---------------------------------------------------------- */
 
 /* Example 07 */
 
 .container {
-	width: 1024px; /* change me to a percentage width, like 80% */
+	width: 80%; /* change me to a percentage width, like 80% */
 	margin: 0 auto;
 }
 
 
 .header {}
 
-.logo {}
+.header:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
 
-.navigation {}
+.logo {
+	width: 20%;
+	float: left;
+}
 
-.sidebar {}
+.navigation {
+	width: 70%;
+	float: right;
+}
 
-.main-content {}
 
-.sub-content {}
 
-.sub-content-2 {}
+.main-content {
+	width: 100%;
+	height: 100%;
+}
 
-.footer {}
+/*.main-content div {
+	margin: 10px;
+}*/
+
+.main-content:after{
+	content: " ";
+  border: 1px solid black;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+	/*height: 100%;*/
+}
+
+.sub-content {
+
+	width: 70%;
+	float: right;
+}
+
+.sub-content-2 {
+
+	width: 70%;
+	float: right;
+}
+
+.footer {
+	clear: both;
+}
